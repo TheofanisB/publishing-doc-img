@@ -21,4 +21,4 @@ jobs:
           docker tag my-node-app:latest theofanisb/my-node-app
       - name: Push Docker image to registry
         run: |
-          docker push theofanisb/my-node-app-demo
+          docker push theofanisb/my-node-app
