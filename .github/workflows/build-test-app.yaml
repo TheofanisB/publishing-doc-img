@@ -18,7 +18,7 @@ jobs:
       - name: Build and tag Docker image
         run: |
           docker build -t my-node-app .
-          docker tag theofanisb/my-node-app:latest theofanisb/my-node-app
+          docker tag my-node-app:latest theofanisb/my-node-app
       - name: Push Docker image to registry
         run: |
           docker push theofanisb/my-node-app-demo
