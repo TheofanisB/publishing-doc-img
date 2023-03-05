@@ -17,8 +17,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build and tag Docker image
         run: |
-          docker build -t my-image .
-          docker tag my-image docker.io/my-username/my-image:latest
+          docker build -t my-node-app .
+          docker tag my-image docker.io/theofanisb/my-node-app:latest theofanisb/my-node-app-demo
       - name: Push Docker image to registry
         run: |
-          docker push docker.io/my-username/my-image:latest
+          docker push theofanisb/my-node-app-demo
